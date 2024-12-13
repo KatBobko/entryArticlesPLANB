@@ -124,26 +124,26 @@ st.header("1. Mitigation/Prevention Measure Details")
 MitigationName = text_input_with_none("Name of the mitigation activity or solution.", max_chars=255)
 TypeM = text_input_with_none("Category (e.g., environmental, regulatory, social, planning, technological).", max_chars=255)
 Subtype = text_input_with_none("Specific subcategory under the primary type.", max_chars=255)
-ScaleOfImplementation = selectbox_with_custom_input("Scale of Implementation", ["Local", "National", "Global"], key="other_scale_of_implementation")
+ScaleOfImplementation = selectbox_with_custom_input("Scale of Implementation", ["Local", "Regional", "National", "European", "International"], key="other_scale_of_implementation")
 ImpactOnLightPollution = selectbox_with_custom_input("Impact on Light Pollution", ["High", "Moderate", "Minimal", "None"], key="other_impact_on_light_pollution")
 ImpactOnNoisePollution = selectbox_with_custom_input("Impact on Noise Pollution", ["High", "Moderate", "Minimal", "None"], key="other_impact_on_noise_pollution")
-CauseOfPollutionAddressed = text_input_with_none("Primary causes the measure targets (e.g., traffic, industry, urban lighting).", max_chars=255)
-AdditionalPollutionImpacts = text_input_with_none("Secondary effects (e.g., air pollution, heat).", max_chars=255)
+CauseOfPollutionAddressed = text_input_with_none("Primary causes the measure targets (e.g., traffic, industry, urban lighting, private sector).", max_chars=255)
+AdditionalPollutionImpacts = text_input_with_none("Secondary effects (e.g., air pollution, heat, reflectivity (solar panels, etc.)).", max_chars=255)
 Keywords = text_input_with_none("Relevant keywords for categorization and indexing.")
 
 # 2. Additional section: Planning and Design Considerations
 st.header("2. Planning and Design Considerations")
 
-AlignmentWithLandUsePlanning = text_input_with_none("Alignment with Land Use Planning.")
-IntegrationIntoEcologicalNetworks = text_input_with_none("Integration into Ecological Networks.")
-Feasibility = text_input_with_none("Feasibility.")
+AlignmentWithLandUsePlanning = text_input_with_none("Alignment with Land Use Planning (How it fits with zoning legislation, urban planning documents, urban/rural development strategies.)")
+IntegrationIntoEcologicalNetworks = text_input_with_none("Integration into Ecological Networks (consistency with biodiversity habitats connectivity and protected areas.)")
+Feasibility = text_input_with_none("Feasibility (consistency with biodiversity habitats connectivity and protected areas).")
 
 # 3. Additional section: Regulatory and Compliance
-st.header("3. Regulatory and Compliance")
+st.header("3. Regulatory framework and Policy and Legal Compliance")
 
-RelevantRegulations = text_input_with_none("Applicable legal frameworks and guidelines (e.g., EU Directive 2002/49/WE).")
+RelevantRegulations = text_input_with_none("Applicable legal and policy frameworks and non-binding instruments, such as guidelines and standards (e.g., EU Directive 2002/49/WE)")
 RegulatoryChallenges = text_input_with_none("Potential obstacles in legal or policy implementation.")
-StakeholderAlignment = text_input_with_none("Alignment with community, governmental, or business interests.")
+StakeholderAlignment = text_input_with_none("Alignment with community, public and private interests, existing legal framework and policy goals.")
 
 # 4. Additional section: Social and Behavioural Aspects
 st.header("4. Social and Behavioural Aspects")
@@ -171,10 +171,10 @@ CoBenefits = text_input_with_none("Additional benefits like carbon sequestration
 # 7. Additional section: Cost, Implementation, and Validation
 st.header("7. Cost, Implementation, and Validation")
 
-CostRange = text_input_with_none("Estimated cost for local, national, or global implementation.")
+CostRange = text_input_with_none("Estimated cost for local, national, EU  or international implementation.")
 Timeframe = text_input_with_none("Approximate time required for implementation.")
 AssessmentMethod = text_input_with_none("Methodology to measure success (e.g., EIA, noise mapping, biodiversity surveys).")
-ValidationIndicators = text_input_with_none("Key performance indicators to assess effectiveness.")
+ValidationIndicators = text_input_with_none("Easiness of implementation: Key performance indicators to assess effectiveness.")
 
 
 # Submit button
